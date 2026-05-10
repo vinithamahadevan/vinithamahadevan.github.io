@@ -2,6 +2,10 @@
 
 **Lead Release Train Engineer | SAFe RTE | Agile Transformation Leader**
 
+<p align="center">
+  <img src="./profile.jpg" alt="Vinitha Mahadevan" width="180" style="border-radius:50%;">
+</p>
+
 ---
 
 ## About
