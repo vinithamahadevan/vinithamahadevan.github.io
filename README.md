@@ -10,7 +10,7 @@
 
 ## About
 
-Results-driven Lead Release Train Engineer with 20+ years of experience in Agile program management, SAFe implementation, and large-scale technology delivery. Proven track record of leading multiple Agile Release Trains (ARTs) across cross-functional teams to drive end-to-end value delivery. Expert in facilitating PI Planning, removing impediments, managing dependencies, and fostering continuous improvement. Adept at leading distributed teams (onshore/offshore) and partnering with executive leadership to align program execution with strategic business objectives. Deep domain experience across automotive, healthcare, insurance, banking, retail, manufacturing, and logistics sectors.
+Results-driven Lead Release Train Engineer with 20+ years of experience in Agile program management, SAFe implementation, and large-scale technology delivery. Expert in orchestrating continuous planning across the full value stream — from intake and discovery through flow management, value delivery, and Inspect & Adapt embedded within these processes. Proven track record of leading multiple Agile Release Trains (ARTs) across cross-functional teams to drive end-to-end value delivery. Adept at leading distributed teams (onshore/offshore) and partnering with executive leadership to align program execution with strategic business objectives. Driving AI transformation by facilitating AI training using Claude and Claude Code to accelerate delivery and innovation. Deep domain experience across automotive, healthcare, insurance, banking, retail, manufacturing, and logistics sectors.
 
 ---
 
@@ -18,8 +18,9 @@ Results-driven Lead Release Train Engineer with 20+ years of experience in Agile
 
 | Area | Expertise |
 |------|-----------|
-| **Agile & SAFe** | PI Planning, ART Execution, Scrum of Scrums, Kanban, Lean-Agile Principles, Inspect & Adapt |
+| **Agile & SAFe** | PI Planning, ART Execution, Scrum of Scrums, Kanban, Lean-Agile Principles, Inspect & Adapt, Continuous Planning (Intake, Discovery, Flow Management, Value Delivery) |
 | **Program Management** | Release Planning, Dependency Management, Risk Mitigation, Capacity Planning, Value Stream Management |
+| **AI Transformation** | AI Training Facilitation (Claude, Claude Code), AI Adoption, AI-Augmented Delivery |
 | **Leadership** | Coaching & Mentoring, Servant Leadership, Facilitator, Stakeholder Management, Process Re-engineering |
 | **Tools** | Jira, Confluence, Rally, MS Project, SAFe, Scrum, Kanban |
 
@@ -28,6 +29,8 @@ Results-driven Lead Release Train Engineer with 20+ years of experience in Agile
 ## Experience
 
 **Lead Release Train Engineer** — Cox Automotive Inc., Roswell, GA *(Apr 2022 – Present)*
+  - Orchestrate continuous planning across the full value stream — intake, discovery, flow management, value delivery, and Inspect & Adapt embedded within all processes
+  - Drive AI transformation by facilitating AI training using Claude and Claude Code, enabling teams to accelerate development and innovation
 
 **Senior Release Train Engineer** — MerchantE, Alpharetta, GA *(Sep 2021 – Mar 2022)*
 
