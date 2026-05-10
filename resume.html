@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinitha Mahadevan - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background: #f5f0f5;
+            color: #333;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .page {
+            max-width: 950px;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 10px 40px rgba(125,73,119,0.15);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .header {
+            background: #7d4977;
+            color: #fff;
+            padding: 40px 50px 35px;
+        }
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .header .title {
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 6px;
+            opacity: 0.9;
+        }
+        .header .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 16px;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .header .contact span { opacity: 0.85; }
+        .header .contact a { color: #fff; text-decoration: none; opacity: 0.85; }
+        .header .contact a:hover { opacity: 1; text-decoration: underline; }
+        .profile-pic {
+            width: 110px; height: 110px; border-radius: 50%;
+            object-fit: cover; border: 3px solid rgba(255,255,255,0.4);
+            flex-shrink: 0;
+        }
+
+        .body { padding: 35px 50px 45px; }
+
+        .section { margin-bottom: 28px; }
+        .section:last-child { margin-bottom: 0; }
+        .section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #7d4977;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #7d4977;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+        .section p, .section li { font-size: 15px; line-height: 1.6; color: #444; }
+
+        .summary p { font-size: 15px; line-height: 1.7; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 30px;
+        }
+        .skills-grid .skill-cat { font-weight: 600; color: #7d4977; font-size: 14px; }
+        .skills-grid .skill-items { font-size: 14px; color: #555; margin-bottom: 8px; }
+
+        .exp-item { margin-bottom: 18px; }
+        .exp-item:last-child { margin-bottom: 0; }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        .exp-header h3 { font-size: 17px; font-weight: 700; color: #333; }
+        .exp-header .company { color: #7d4977; font-weight: 600; font-size: 15px; }
+        .exp-header .dates { font-size: 14px; color: #888; font-weight: 400; }
+        .exp-sub { font-size: 14px; color: #666; font-style: italic; margin: 2px 0 8px; }
+        .exp-item ul { padding-left: 20px; }
+        .exp-item ul li { margin-bottom: 4px; font-size: 14px; line-height: 1.6; }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .cert-item {
+            background: #f9f4f9;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            border-left: 3px solid #7d4977;
+        }
+        .cert-item .cert-name { font-weight: 600; color: #333; }
+        .cert-item .cert-issuer { color: #7d4977; font-size: 13px; }
+        .cert-item .cert-date { color: #888; font-size: 12px; }
+
+        .accomplishments { padding-left: 20px; }
+        .accomplishments li { margin-bottom: 6px; font-size: 14px; line-height: 1.6; }
+        .accomplishments li strong { color: #7d4977; }
+
+        .footer {
+            text-align: center;
+            padding: 20px 50px;
+            font-size: 13px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+        }
+        .footer a { color: #7d4977; text-decoration: none; }
+
+        @media print {
+            body { background: #fff; padding: 0; }
+            .page { box-shadow: none; border-radius: 0; }
+            .header { padding: 28px 40px 22px; }
+            .body { padding: 22px 40px 25px; }
+            .section { margin-bottom: 18px; }
+            .profile-pic { width: 90px; height: 90px; }
+        }
+        @media (max-width: 600px) {
+            body { padding: 15px; }
+            .header { padding: 25px 20px; }
+            .body { padding: 20px; }
+            .skills-grid, .cert-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 30px; }
+            .header .contact { flex-direction: column; gap: 6px; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div style="display:flex;align-items:center;gap:30px;flex-wrap:wrap;">
+            <img src="profile.jpg" alt="Vinitha Mahadevan" class="profile-pic">
+            <div>
+                <h1>Vinitha Mahadevan</h1>
+                <div class="title">Lead Release Train Engineer &middot; SAFe RTE &middot; Agile Transformation Leader</div>
+                <div class="contact">
+                    <span>Roswell, Georgia</span>
+                    <span>&#8226;</span>
+                    <span>vinim2311@gmail.com</span>
+                    <span>&#8226;</span>
+                    <span>470-846-9985</span>
+                    <span>&#8226;</span>
+                    <a href="https://linkedin.com/in/vinitha-m">linkedin.com/in/vinitha-m</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="section summary">
+            <h2>Professional Summary</h2>
+            <p>Results-driven Lead Release Train Engineer with 20+ years of experience in Agile program management, SAFe implementation, and large-scale technology delivery. Proven track record of leading multiple Agile Release Trains (ARTs) across cross-functional teams to drive end-to-end value delivery. Expert in facilitating PI Planning, removing impediments, managing dependencies, and fostering continuous improvement. Adept at leading distributed teams (onshore/offshore) and partnering with executive leadership to align program execution with strategic business objectives. Deep domain experience across automotive, healthcare, insurance, banking, retail, manufacturing, and logistics sectors.</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-cat">Agile &amp; SAFe</div>
+                    <div class="skill-items">PI Planning, ART Execution, Scrum of Scrums, Kanban, Lean-Agile, Inspect &amp; Adapt</div>
+                </div>
+                <div>
+                    <div class="skill-cat">Program Management</div>
+                    <div class="skill-items">Release Planning, Dependency &amp; Risk Mgmt, Capacity Planning, Demand Mgmt, Portfolio Intake</div>
+                </div>
+                <div>
+                    <div class="skill-cat">Leadership</div>
+                    <div class="skill-items">Coaching &amp; Mentoring, Servant Leadership, Facilitation, Stakeholder Mgmt, Process Re-engineering</div>
+                </div>
+                <div>
+                    <div class="skill-cat">Tools &amp; Methodologies</div>
+                    <div class="skill-items">Jira, Confluence, Rally, MS Project, SAFe, Scrum, Kanban, Lean Portfolio Mgmt</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Lead Release Train Engineer</h3>
+                    <span class="company">Cox Automotive Inc. &mdash; Roswell, GA</span>
+                    <span class="dates">Apr 2022 &ndash; Present</span>
+                </div>
+                <ul>
+                    <li>Lead and coach multiple Agile Release Trains (ARTs) comprising 7+ cross-functional teams (50+ engineers), driving end-to-end delivery for the automotive retail ecosystem</li>
+                    <li>Facilitate quarterly PI Planning events with 80+ participants, aligning Product, Engineering, Architecture, and Business stakeholders on program objectives</li>
+                    <li>Drive continuous improvement through Inspect &amp; Adapt workshops using flow metrics to identify bottlenecks and implement process improvements</li>
+                    <li>Manage cross-team dependencies, risks, and impediments; escalate strategically to executive sponsors</li>
+                    <li>Coach Scrum Masters, Product Owners, and teams on SAFe practices and Lean-Agile principles</li>
+                    <li>Establish ART-level KPIs (predictability, cycle time, throughput); present data-driven insights to leadership</li>
+                    <li>Lead transformation of traditional project teams into high-performing Agile teams</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Senior Release Train Engineer</h3>
+                    <span class="company">MerchantE &mdash; Alpharetta, GA</span>
+                    <span class="dates">Sep 2021 &ndash; Mar 2022</span>
+                </div>
+                <ul>
+                    <li>Served as RTE for payment technology solutions, facilitating ART ceremonies and cross-team coordination</li>
+                    <li>Managed program-level backlog and release planning for merchant payment processing platforms</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Program Manager</h3>
+                    <span class="company">Anthem, Inc. &mdash; Greater Atlanta Area</span>
+                    <span class="dates">Jan 2018 &ndash; Aug 2021</span>
+                </div>
+                <ul>
+                    <li>Served as Release Train Engineer for large group Underwriting project in health insurance</li>
+                    <li>Managed program execution, stakeholder reporting, and cross-team dependencies for enterprise healthcare initiatives</li>
+                    <li>Drove Agile adoption and maturity, improving delivery predictability and quality</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Program Executive</h3>
+                    <span class="company">Cognizant &mdash; Anthem Inc.</span>
+                    <span class="dates">Mar 2016 &ndash; Dec 2017</span>
+                </div>
+                <ul>
+                    <li>Led program management for Anthem account, managing delivery across multiple workstreams</li>
+                    <li>Coordinated with client leadership to align program milestones with business objectives</li>
+                    <li>Drove process improvements and governance frameworks for large-scale healthcare IT programs</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Portfolio Project Manager</h3>
+                    <span class="company">Cognizant Technology Solutions &mdash; Sallie Mae</span>
+                    <span class="dates">Jan 2015 &ndash; Feb 2016</span>
+                </div>
+                <ul>
+                    <li>Managed portfolio demand management and release delivery for student lending programs</li>
+                    <li>Mentored project managers and established standardized processes</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Senior Manager</h3>
+                    <span class="company">Cognizant &mdash; Express Scripts, Orlando, FL</span>
+                    <span class="dates">Feb 2013 &ndash; Dec 2014</span>
+                </div>
+                <ul>
+                    <li>Managed specialty pharmacy projects for Integration and Intake portfolio</li>
+                    <li>Led demand planning, forecasting, and budgeting; mentored project managers</li>
+                    <li>Drove process re-engineering for Intake to streamline delivery</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Senior Manager</h3>
+                    <span class="company">Cognizant &mdash; Wellpoint, Richmond, VA</span>
+                    <span class="dates">Oct 2010 &ndash; Jan 2013</span>
+                </div>
+                <ul>
+                    <li>Managed programs across multiple teams/vendors with 200+ resources</li>
+                    <li>Led business solutions development, process re-engineering, budgeting, and implementation</li>
+                    <li>Coached senior staff on planning and execution of critical business initiatives</li>
+                    <li>Developed project roadmaps, change management, risk assessment, and stakeholder reporting</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Project Manager</h3>
+                    <span class="company">Cognizant &mdash; BCBSM, NASCO, Wellpoint</span>
+                    <span class="dates">Oct 2007 &ndash; Oct 2010</span>
+                </div>
+                <ul>
+                    <li>Managed mid-size projects spanning multiple teams in the healthcare payer space</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Senior Programmer Analyst</h3>
+                    <span class="company">Cognizant &mdash; WI, MI</span>
+                    <span class="dates">Jul 2003 &ndash; Oct 2007</span>
+                </div>
+                <ul>
+                    <li>Developed technical solutions on LAWSON HR and Financials at Schneider National, WI</li>
+                    <li>Led technical teams (onsite/offshore) for claims migration at BCBSM, MI</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Technical Software Consultant</h3>
+                    <span class="company">Deutsche Bank</span>
+                    <span class="dates">Jun 2000 &ndash; Jul 2003</span>
+                </div>
+                <ul>
+                    <li>Developed and enhanced Corporate Banking and Investment Banking applications</li>
+                    <li>Worked across global teams (U.K., USA, Singapore, Malaysia, India)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <div class="cert-name">SAFe 4 Release Train Engineer (RTE)</div>
+                    <div class="cert-issuer">Scaled Agile, Inc.</div>
+                    <div class="cert-date">Issued Oct 2020</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">SAFe 4 Advanced Scrum Master (SASM)</div>
+                    <div class="cert-issuer">Scaled Agile, Inc.</div>
+                    <div class="cert-date">Issued Jun 2020</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">SAFe 4 Product Owner/Product Manager (POPM)</div>
+                    <div class="cert-issuer">Scaled Agile, Inc.</div>
+                    <div class="cert-date">Issued Jul 2020</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Accomplishments</h2>
+            <ul class="accomplishments">
+                <li><strong>ART Launch &amp; Maturation:</strong> Launched and matured a new ART at Cox Automotive, achieving 85%+ PI predictability within three Program Increments</li>
+                <li><strong>Delivery Velocity:</strong> Improved ART delivery velocity by 30% through WIP optimization and bottleneck removal</li>
+                <li><strong>Cultural Transformation:</strong> Championed Agile adoption across waterfall-aligned teams, improving engagement and time-to-market</li>
+                <li><strong>Dependency Management:</strong> Implemented visual dependency tracking that reduced cross-team blocking issues by 40%</li>
+                <li><strong>Executive Reporting:</strong> Designed metrics-driven dashboard providing real-time ART health and risk visibility</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>University of Madras, Chennai</strong> &mdash; Bachelor of Engineering, Electrical, Electronics and Communications Engineering</p>
+            <p>SBOA School, Chennai</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Vinitha Mahadevan &mdash; <a href="https://linkedin.com/in/vinitha-m">linkedin.com/in/vinitha-m</a>
+    </div>
+</div>
+</body>
+</html>
